@@ -1,6 +1,6 @@
 import { SINGLE_OPTION } from "../../../../utils/constants";
 
-export const CONDUITE_PEDALIER =  {
+export const PERSOINT_CONDUITE_PEDALIER =  {
     type: SINGLE_OPTION,
     label: 'Pédalier en aluminium',
     slug: 'pedalier',
@@ -9,7 +9,7 @@ export const CONDUITE_PEDALIER =  {
     selected: false
 }
 
-export const CONDUITE_HARMONIE_CARBONE =  {
+export const PERSOINT_CONDUITE_HARMONIE_CARBONE =  {
     type: SINGLE_OPTION,
     label: 'harmonie carbone',
     slug: 'harmonie-carbone',
@@ -18,7 +18,7 @@ export const CONDUITE_HARMONIE_CARBONE =  {
     selected: true
 }
 
-export const LOGO_VOLANT  =  {
+export const PERSOINT_LOGO_VOLANT  =  {
     type: SINGLE_OPTION,
     label: 'logo au centre du volant en bleu Alpine',
     slug: 'Logo volant',
@@ -27,7 +27,7 @@ export const LOGO_VOLANT  =  {
     selected: false
 }
 
-export const SIEGE_CHAUFFANT =  {
+export const PERSOINT_SIEGE_CHAUFFANT =  {
     type: SINGLE_OPTION,
     label: 'Siége chauffants',
     slug: 'siége chauffants',

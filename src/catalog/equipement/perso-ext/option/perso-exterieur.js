@@ -1,6 +1,6 @@
 import { SINGLE_OPTION } from "../../../../utils/constants";
 
-export const CONDUITE_ETRIERS_FREIN_BLEU_ALPINE  =  {
+export const PERSOEXT_ETRIERS_FREIN_BLEU_ALPINE  =  {
     type: SINGLE_OPTION,
     label: 'Etriers de frein couleur Bleu Alpine',
     slug: ' Etriers-de-frein-couleur-Bleu-Alpine',
@@ -9,7 +9,7 @@ export const CONDUITE_ETRIERS_FREIN_BLEU_ALPINE  =  {
     selected: false
 }
 
-export const CONDUITE_LOGO_ALPINE_AILES  =  {
+export const PERSOEXT_LOGO_ALPINE_AILES  =  {
     type: SINGLE_OPTION,
     label: 'Logo Alpine sur les ailes avant',
     slug: 'Logo-Alpine-sur-les-ailes-avant',
@@ -18,7 +18,7 @@ export const CONDUITE_LOGO_ALPINE_AILES  =  {
     selected: false
 }
 
-export const CONDUITE_ETRIERS_FREIN_GRIS  =  {
+export const PERSOEXT_ETRIERS_FREIN_GRIS  =  {
     type: SINGLE_OPTION,
     label: 'Etriers de frein couleur Gris Anthracite',
     slug: 'Etriers-de-frein-couleur-Gris-Anthracite',
