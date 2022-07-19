@@ -1,18 +1,18 @@
 import { SINGLE_OPTION } from "../../../../utils/constants";
 
-export const PEDALIER =  {
+export const CONDUITE_PEDALIER =  {
     type: SINGLE_OPTION,
     label: 'Pédalier en aluminium',
-    slug: 'pédalier',
+    slug: 'pedalier',
     price: 120,
     default: false,
     selected: false
 }
 
-export const HARMONIE_CARBONE =  {
+export const CONDUITE_HARMONIE_CARBONE =  {
     type: SINGLE_OPTION,
     label: 'harmonie carbone',
-    slug: 'Harmonie Carbone',
+    slug: 'harmonie-carbone',
     price: 0,
     default: true,
     selected: true
