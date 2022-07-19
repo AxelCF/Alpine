@@ -1,38 +1,38 @@
 import { SINGLE_OPTION } from "../../../../utils/constants";
 
-export const MEDIA_TELEMETRICS =  {
+export const CONDUITE_AIDE_STATIONNEMENT_AR  =  {
     type: SINGLE_OPTION,
-    label: 'Alpine Telemetrics',
-    slug: 'telemetry',
-    price: 204,
-    default: false,
-    selected: false
+    label: 'Aide au stationnement AR',
+    slug: 'Aide-au-stationnement-AR',
+    price: 420,
+    default: true,
+    selected: true
     // Si une option n'est disponible que pour un seul des deux modèles, le spécifier au format 'model: PURE' par exemple
 }
 
-export const MEDIA_AUDIO_STANDARD = {
+export const CONDUITE_AIDE_STATIONNEMENT_AV_AR  =  {
     type: SINGLE_OPTION,
-    label: 'Système Audio standard',
-    slug: 'audio-standard',
-    price: 0,
-    default: true,
-    selected: true
-}
-
-export const MEDIA_AUDIO_FOCAL = {
-    type: SINGLE_OPTION,
-    label: 'Système Audio Focal',
-    slug: 'audio-focal',
-    price: 600,
+    label: 'Aide au stationnement AV AR',
+    slug: 'Aide-au-stationnement-AV-AR',
+    price: 750,
     default: false,
     selected: false
 }
 
-export const MEDIA_AUDIO_FOCAL_PREMIUM = {
+export const CONDUITE_AIDE_STATIONNEMENT_AV_AR_CAMERA  =  {
     type: SINGLE_OPTION,
-    label: 'Système Audio Focal Premium',
-    slug: 'audio-focal-premium',
+    label: 'Aide au stationnement AV AR CAM',
+    slug: 'Aide-au-stationnement-AV-AR-CAM',
     price: 1200,
+    default: false,
+    selected: false
+}
+
+export const CONDUITE_ECHAPEMENT_SPORT_ACTIF  =  {
+    type: SINGLE_OPTION,
+    label: 'Echappement Sport actif',
+    slug: 'Echappement-Sport-actif',
+    price: 1500,
     default: false,
     selected: false
 }
