@@ -6,18 +6,13 @@ export const MEDIA_OPTIONS = {
     label: 'Média et Navigation',
     slug: 'media',
     options: [
+        MEDIA_TELEMETRICS,
         {
-            type: GROUP_OPTION,
+            type: SELECT_OPTION,
             options: [
-                MEDIA_TELEMETRICS,
-                {
-                    type: SELECT_OPTION,
-                    options: [
-                       MEDIA_AUDIO_STANDARD,
-                       MEDIA_AUDIO_FOCAL,
-                       MEDIA_AUDIO_FOCAL_PREMIUM
-                    ]
-                }
+                MEDIA_AUDIO_STANDARD,
+                MEDIA_AUDIO_FOCAL,
+                MEDIA_AUDIO_FOCAL_PREMIUM
             ]
         }
     ]

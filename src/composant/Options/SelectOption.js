@@ -1,12 +1,13 @@
+import { SINGLE_OPTION } from "../../utils/constants";
 import SingleOption from "./SingleOption"
 
 
-const SelectOption = () =>{
+const SelectOption = ({option}) =>{
     return (
        <div className="selectOption">
-        <SingleOption/>
-        <SingleOption/>
-        <SingleOption/>
+        {option.options.map(option => {
+                return <SingleOption option={option} />
+            })}
        </div>
    )
    }

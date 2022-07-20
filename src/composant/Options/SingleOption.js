@@ -1,8 +1,8 @@
 
-const SingleOption = () =>{
+const SingleOption = ({option}) =>{
 
  return (
-    <div className="singleOption">Jante blanche</div>
+    <div className="singleOption">{option.label}</div>
 )
 }
 export default SingleOption
