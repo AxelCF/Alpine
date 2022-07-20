@@ -2,13 +2,9 @@ body{
     background-color: black;
     background-color: #17191c;
 }
-.logoAlpine{
-    margin-top: 5%;
 
-}
 
 h1{
-    margin-top: 5%;
     color:#1d29fe;
     text-align: center;
     font-family: 'PT Sans Caption', sans-serif;
@@ -21,7 +17,6 @@ h1{
     
     width:60%;
     margin: auto;
-    margin-top: 10%;
 
 
 }
