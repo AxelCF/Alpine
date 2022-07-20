@@ -1,6 +1,7 @@
 body{
   color: white;
   background-color: #17191c;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .App {
@@ -16,18 +17,41 @@ body{
 }
 
 .alpine{
-  max-width: 100%;
+ width: 100%;
 }
 
 .App p{
   width: 70%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.container{
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 65px;
 }
 
 .card{
-  padding-top: 100px;
-  width: 300px;
-  height: 300px;
-  border: black solid 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 3px solid black;
+  border-radius: 15%;
+  padding: 0px 30px;
+  height: 500px;
+  width: 500px;
+  transition: 300ms;
 }
+
+.card:hover{
+  transition: 300ms;
+  /* box-shadow: 0px 0px 50px 5px #0009b6; */
+  box-shadow: 10px 10px 8px #000899;
+}
+
