@@ -1,18 +1,18 @@
-import { SINGLE_OPTION } from "../../../../utils/constants";
+import { LEGENDE, PURE, SINGLE_OPTION } from "../../../../utils/constants"
 
-export const VERSION_PURE=  {
+// MODELS
+export const MODELE_PURE = {
     type: SINGLE_OPTION,
-    label: 'Pure',
+    label: PURE,
     slug: 'pure',
     price: 54700,
     default: false,
     selected: false
 }
 
-
-export const VERSION_LEGENDE =  {
+export const MODELE_LEGENDE = {
     type: SINGLE_OPTION,
-    label: 'Légende',
+    label: LEGENDE,
     slug: 'legende',
     price: 58500,
     default: false,

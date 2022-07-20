@@ -1,4 +1,4 @@
-import { LEGENDE, SINGLE_OPTION } from "../../../../utils/constants";
+import { LEGENDE, SINGLE_OPTION } from "../../../utils/constants";
 
 export const SCELLERIE_SIEGES_BAQUETS_CUIR_NOIR_DINAMICA  =  {
     type: SINGLE_OPTION,

@@ -1,4 +1,4 @@
-import { LEGENDE, MODELE, SINGLE_OPTION } from "../../../../utils/constants";
+import { LEGENDE, MODELE, SINGLE_OPTION } from "../../../utils/constants";
 
 
 export const EXTERIEUR_STANDARD = {
