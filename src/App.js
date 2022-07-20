@@ -10,6 +10,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
+  const model = useSelector(state => state.configurator.step[1]);
   return (
     <div className="App">
       <header className="App-header">

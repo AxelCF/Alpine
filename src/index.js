@@ -6,13 +6,14 @@ import App from './Step';
 import reportWebVitals from './reportWebVitals';
 import { store } from './store'
 import { Provider } from 'react-redux'
-import Step from './Step';
+import StepPage from "./StepPage";
+// import Step from './Step';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <Step />
+      <StepPage/>
     </Provider>
   </React.StrictMode>
 );
