@@ -1,0 +1,14 @@
+import { CONDUITE_AIDE_STATIONNEMENT_AR } from "../conduite/options/conduite";
+import { CONFORT_PACK_DE_RANGEMENT, CONFORT_RETROVISEUR_EXT_CHAUF_REBBATABLES_ELEC, CONFORT_RETROVISEUR_INTERIEUR_ELECTROCHROME } from "./options/confort";
+
+export const CONFORT_OPTIONS = {
+    label: 'Confort',
+    slug: 'confort',
+    uniqueOption: true,
+    options: [
+        CONDUITE_AIDE_STATIONNEMENT_AR,
+        CONFORT_RETROVISEUR_INTERIEUR_ELECTROCHROME,
+        CONFORT_RETROVISEUR_EXT_CHAUF_REBBATABLES_ELEC,
+        CONFORT_PACK_DE_RANGEMENT
+    ]
+}

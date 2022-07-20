@@ -1,4 +1,4 @@
-import { SINGLE_OPTION } from "../../../../utils/constants";
+import { SINGLE_OPTION } from "../../../utils/constants";
 
 
 export const COULEURS_TEINTE_SPECIAL_BLEU_ALPINE =  {

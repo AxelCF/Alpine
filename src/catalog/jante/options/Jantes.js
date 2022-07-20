@@ -1,7 +1,7 @@
 import { LEGENDE, MODELE, SINGLE_OPTION } from "../../../utils/constants";
 
 
-export const EXTERIEUR_STANDARD = {
+export const JANTES_STANDARD = {
     type: SINGLE_OPTION,
     label: 'Standard',
     slug: 'standard',
@@ -10,7 +10,7 @@ export const EXTERIEUR_STANDARD = {
     selected: false
 }
 
-export const EXTERIEUR_SERAC = {
+export const JANTES_SERAC = {
     type: SINGLE_OPTION,
     label: 'Serac',
     slug: 'serac',
@@ -19,7 +19,7 @@ export const EXTERIEUR_SERAC = {
     selected: false
 }
 
-export const EXTERIEUR_LEGENDE = {
+export const JANTES_LEGENDE = {
     type: SINGLE_OPTION,
     label: 'Legende',
     slug: 'legende',
