@@ -13,7 +13,11 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "redux": "^4.2.0",
+=======
+    "read-more-react": "^1.0.10",
+>>>>>>> c5530f5bc3a10d4e507711bf8bed9218aac0a836
     "web-vitals": "^2.1.4"
   },
   "scripts": {

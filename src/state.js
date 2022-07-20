@@ -16,14 +16,33 @@ const initialState = {
 
 }
 
-export const appSlice = createSlice({
-    name: 'app',
+export const configuratorSlice = createSlice({
+    name: 'configurator',
     initialState,
     reducers: {
-        // A completer
+        setModel: (state, action) => {
+            // PAYLOAD: PURE | LEGENDE
+        },
+        selectOption: (state, action) => {
+            // PAYLOAD: optionSlug
+        },
+        goToStep: (state, action) => {
+
+        },
+        resetFrom: (state, action) => {
+
+        }
     },
 })
 
-// export const {  } = appSlice.actions
+export const { setModel, selectOption, goToStep, resetFrom } = configuratorSlice.actions
 
-export default appSlice.reducer
+export default configuratorSlice.reducer
+
+function refreshPrice(state) {
+
+}
+
+function getVisual(state) {
+
+}

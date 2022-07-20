@@ -1,38 +1,91 @@
-.App {
+.Step {
   text-align: center;
 }
 
-.App-logo {
+.Step-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Step-header {
+  background-color: #17191c;
+  min-height: 100vh;
+}
+body{
+  color: white;
+  background-color: #17191c;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.App {
+  text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sectionOption{
+  background-color: rgb(11, 201, 125);
+  padding: 10px;
+  margin: 10px;
+}
+.selectOption{
+  background-color: rgb(78, 11, 201);
+  border:2px solid rgb(255, 1, 1);
+  padding: 10px;
+  margin: 10px;
+}
+.singleOption{
+  background-color: rgb(255, 15, 155);
+  padding: 10px;
+  margin: 10px;
+}
+.stepOptions{
+  background-color: rgb(252, 173, 16);
+  padding: 10px;
+  margin: 10px;
+}
+.alpine{
+ width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App p{
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
+
+.container{
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin-bottom: 65px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  border: 3px solid black;
+  border-radius: 15%;
+  padding: 0px 30px;
+  height: 500px;
+  width: 500px;
+  transition: 300ms;
+}
+
+.card:hover{
+  transition: 300ms;
+  /* box-shadow: 0px 0px 50px 5px #0009b6; */
+  box-shadow: 10px 10px 8px #000899;
+}
+
