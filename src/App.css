@@ -1,3 +1,15 @@
+.Step {
+  text-align: center;
+}
+
+.Step-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Step-header {
+  background-color: #17191c;
+  min-height: 100vh;
 body{
   color: white;
   background-color: #17191c;
@@ -16,6 +28,27 @@ body{
   justify-content: center;
 }
 
+.sectionOption{
+  background-color: rgb(11, 201, 125);
+  padding: 10px;
+  margin: 10px;
+}
+.selectOption{
+  background-color: rgb(78, 11, 201);
+  border:2px solid rgb(255, 1, 1);
+  padding: 10px;
+  margin: 10px;
+}
+.singleOption{
+  background-color: rgb(255, 15, 155);
+  padding: 10px;
+  margin: 10px;
+}
+.stepOptions{
+  background-color: rgb(252, 173, 16);
+  padding: 10px;
+  margin: 10px;
+}
 .alpine{
  width: 100%;
 }
