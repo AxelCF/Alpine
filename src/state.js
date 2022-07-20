@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { MODEL_OPTIONS } from './catalog/accessoires/accessoiresOptions'
 import { EQUIPEMENT_OPTIONS } from './catalog/equipement/equipementOptions'
-import { MODEL_OPTIONS } from './catalog/model/modelOptions'
+
+import { ACCESSOIRES } from './utils/constants'
 
 const initialState = {
     price: 0,
@@ -8,8 +10,8 @@ const initialState = {
     currentStep: 0,
     steps: [
         MODEL_OPTIONS,
-        // A completer
-        EQUIPEMENT_OPTIONS
+        EQUIPEMENT_OPTIONS,
+        ACCESSOIRES_OPTIONS
     ]
 
 }
