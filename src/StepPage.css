@@ -1,10 +1,18 @@
 body{
     background-color: black;
+    background-color: #17191c;
+}
+.logoAlpine{
+    margin-top: 5%;
+
 }
 
 h1{
-    color:white;
+    margin-top: 5%;
+    color:#1d29fe;
     text-align: center;
+    font-family: 'PT Sans Caption', sans-serif;
+
 }
 
 .progressStep{

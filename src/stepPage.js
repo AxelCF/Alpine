@@ -1,7 +1,7 @@
 import logo from './image alpine/sources-homepage/logo/logo-white.png';
 import flecheGreen from './image alpine/sources-homepage/logo/flecheGreen.png';
 import flecheYellow from './image alpine/sources-homepage/logo/flecheYellow.png';
-import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import './StepPage.css';
 
@@ -9,7 +9,7 @@ function StepPage() {
   return (
     <div>
       <header className="App-header">
-        <img src={logo} alt="logo" />
+        <img className="logoAlpine" src={logo} alt="logo" />
       </header>
       <h1>LEGENDE</h1>
 
