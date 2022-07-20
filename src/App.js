@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import Logo from '../src/logo.png';
 import './App.css';
+import StepOptions from './composant/Options/StepOptions';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img className="topLogo" src={Logo}  alt="logo"></img>
+        <h2>LEGENDE</h2>
+        <StepOptions/>
       </header>
     </div>
+
   );
 }
 
