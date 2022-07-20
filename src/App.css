@@ -1,13 +1,13 @@
-.App {
+.Step {
   text-align: center;
 }
 
-.App-logo {
+.Step-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-.App-header {
+.Step-header {
   background-color: #17191c;
   min-height: 100vh;
   display: flex;
