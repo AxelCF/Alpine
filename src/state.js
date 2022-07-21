@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { MODEL_OPTIONS } from './catalog/accessoires/accessoiresOptions'
 import { EQUIPEMENT_OPTIONS } from './catalog/equipement/equipementOptions'
-
+import { MODEL_OPTIONS } from './catalog/model/modelOptions'
+import {ACCESSOIRES_OPTIONS} from './catalog/accessoires/accessoiresOptions'
 import { ACCESSOIRES } from './utils/constants'
 
 const initialState = {
@@ -59,4 +59,16 @@ function refreshPrice(state) {
 
 function getVisual(state) {
 
+}
+
+function findOption(slug) {
+    
+}
+
+function disableGroupe(option, slug){
+
+}
+
+function resetStepOption(step){
+    
 }

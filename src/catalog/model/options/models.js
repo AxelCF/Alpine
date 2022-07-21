@@ -1,4 +1,4 @@
-import { LEGENDE, PURE, SINGLE_OPTION } from "../../../../utils/constants"
+import { LEGENDE, PURE, SINGLE_OPTION } from "../../../utils/constants"
 
 // MODELS
 export const MODELE_PURE = {

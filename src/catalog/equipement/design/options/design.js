@@ -1,3 +1,5 @@
+import { SINGLE_OPTION } from "../../../../utils/constants"
+
 export const DESIGN_PACK_HERITAGE = {
     type: SINGLE_OPTION,
     label: 'Pack héritage',
