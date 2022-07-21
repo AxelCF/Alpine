@@ -10,10 +10,11 @@ export const MEDIA_OPTIONS = {
         {
             type: SELECT_OPTION,
             options: [
-                MEDIA_AUDIO_STANDARD,
-                MEDIA_AUDIO_FOCAL,
-                MEDIA_AUDIO_FOCAL_PREMIUM
-            ]
+                    MEDIA_AUDIO_STANDARD,
+                    MEDIA_AUDIO_FOCAL,
+                    MEDIA_AUDIO_FOCAL_PREMIUM
+                    ]
         }
     ]
+
 }
