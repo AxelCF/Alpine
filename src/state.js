@@ -22,15 +22,29 @@ export const configuratorSlice = createSlice({
     reducers: {
         setModel: (state, action) => {
             // PAYLOAD: PURE | LEGENDE
+            state.currentModel=action.payload;
+            refreshPrice(state);
         },
         selectOption: (state, action) => {
             // PAYLOAD: optionSlug
+            const option = findOption(action.payload)
+            option.selected=! option.selected
+            if(option.groupe&&option.selected){
+                disableGroupe(option.groupe,option.slug);
+            }
+            refreshPrice();
         },
         goToStep: (state, action) => {
-
+            // PAYLOAD : 0...6
+            state.currentStep=action.payload;
         },
         resetFrom: (state, action) => {
-
+            //PAYLOAD : 0...6
+            for (let index = action.payload; index < state.steps.length; index++) {
+                const step= state.steps[index];
+                resetStepOption(step);
+            }
+            refreshPrice()
         }
     },
 })
