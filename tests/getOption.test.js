@@ -1,8 +1,11 @@
 const getOption = (data, slug) => {
-    if (!data) return 'Merci de fournir des données';
-    if (!slug) return 'Merci de fournir une clé';
+    if (!data) throw 'Merci de fournir des données';
+    if (!slug) throw 'Merci de fournir une clé';
 
-    return extract(data.steps, slug)
+    const option = extract(data.steps, slug);
+    if (!option) throw "Aucune option trouvée avec le slug " + slug;
+
+    return option;
 }
 
 const extract = (options, slug) => {
@@ -20,11 +23,11 @@ const extract = (options, slug) => {
 // TESTS //
 
 test("retourne un message d'erreur si aucun argument n'est fourni", () => {
-    expect(getOption()).toBe('Merci de fournir des données');
+    expect(() => getOption()).toThrow('Merci de fournir des données');
 });
 
 test("retourne un message d'erreur avec un seul argument", () => {
-    expect(getOption(testData)).toBe('Merci de fournir une clé');
+    expect(() => getOption(testData)).toThrow('Merci de fournir une clé');
 });
 
 test("retourne l'objet Step11 avec les arguments testData et 'step11'", () => {
@@ -41,6 +44,10 @@ test("retourne l'objet Step221 avec les arguments testData et 'step221'", () => 
 
 test("retourne l'objet Step2222 avec les arguments testData et 'step2222'", () => {
     expect(getOption(testData, 'step2222')).toHaveProperty('label', 'Step2222')
+});
+
+test("retourne une erreur avec les arguments testData et 'step999'", () => {
+    expect(() => getOption(testData, 'step999')).toThrow('Aucune option trouvée avec le slug step999')
 });
 
 
