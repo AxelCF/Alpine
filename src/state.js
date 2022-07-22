@@ -73,13 +73,13 @@ function getVisual(state) {
 }
 
 function findOption(slug) {
-    
+
 }
 
 function disableGroupe(option, slug){
 
 }
 
-function resetStepOption(step){
-    
+function resetStepOptions(step){
+
 }
