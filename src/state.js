@@ -37,7 +37,7 @@ export const configuratorSlice = createSlice({
                 option.selected = true;
             }
             else {
-                if (option.groupe) {
+                if (!option.groupe) {
                     option.selected = false;
                 }
             }
