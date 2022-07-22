@@ -8,8 +8,13 @@ import { Card } from 'react-bootstrap';
 import ReadMoreReact from 'read-more-react';
 import React from 'react';
 import './App.css';
+import { useDispatch } from 'react-redux';
+import { setModel } from './state';
+import { LEGENDE, PURE } from './utils/constants';
+import Step from './Step';
 
 function App() {
+  const dispatch = useDispatch();
   return (
     <div className="App">
       <header className="App-header">
@@ -21,20 +26,21 @@ function App() {
         <img src={demo} className="alpine" alt="car" />
 
       <div className='container'>
-        <Card className='card' style={{ background: 'none' }}>
+        <Card onClick={() => dispatch(setModel(LEGENDE))} className='card' style={{ background: 'none' }}>
           <Card.Img variant="top" src={legende} />
           <Card.Body>
             <Card.Title>LEGENDE</Card.Title>
           </Card.Body>
         </Card>
 
-        <Card className='card' style={{ background: 'none' }}>
+        <Card onClick={() => dispatch(setModel(PURE))} className='card' style={{ background: 'none' }}>
           <Card.Img variant="top" src={pure} />
           <Card.Body>
             <Card.Title>PURE</Card.Title>
           </Card.Body>
         </Card>
       </div>
+<Step/>
     </div>
 
 

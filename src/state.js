@@ -23,6 +23,7 @@ export const configuratorSlice = createSlice({
         setModel: (state, action) => {
             // PAYLOAD: PURE | LEGENDE
             state.currentModel=action.payload;
+            state.currentStep = 1;
             refreshPrice(state);
         },
         selectOption: (state, action) => {
@@ -34,9 +35,11 @@ export const configuratorSlice = createSlice({
             }
             refreshPrice();
         },
+
         goToStep: (state, action) => {
             // PAYLOAD : 0...6
             state.currentStep=action.payload;
+            
         },
         resetFrom: (state, action) => {
             //PAYLOAD : 0...6
