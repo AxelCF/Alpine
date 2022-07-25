@@ -1,11 +1,19 @@
 const getOption = (data, slug) => {
     if (!data) throw 'Merci de fournir des données';
-    if (!slug) throw 'Merci de fournir une clé';
+    if (!slug) throw 'Merci de fournir un slug';
 
     const option = extract(data.steps, slug);
     if (!option) throw "Aucune option trouvée avec le slug " + slug;
 
     return option;
+}
+
+const getTotalPrice = (data) => {
+    if (!data) throw 'Merci de fournir des données';
+
+    const price = extractPrice(data.steps);
+
+    return price;
 }
 
 const extract = (options, slug) => {
@@ -19,15 +27,28 @@ const extract = (options, slug) => {
     }
 }
 
+const extractPrice = (options) => {
+    let price = 0;
+
+    for (const option of options) {
+        price += option.price ?? 0;
+
+        if (option.options) price += extractPrice(option.options);
+    }
+    console.log(price)
+    return price;
+}
+
 
 // TESTS //
+// * GETOPTION //
 
 test("retourne un message d'erreur si aucun argument n'est fourni", () => {
     expect(() => getOption()).toThrow('Merci de fournir des données');
 });
 
 test("retourne un message d'erreur avec un seul argument", () => {
-    expect(() => getOption(testData)).toThrow('Merci de fournir une clé');
+    expect(() => getOption(testData)).toThrow('Merci de fournir un slug');
 });
 
 test("retourne l'objet Step11 avec les arguments testData et 'step11'", () => {
@@ -49,6 +70,18 @@ test("retourne l'objet Step2222 avec les arguments testData et 'step2222'", () =
 test("retourne une erreur avec les arguments testData et 'step999'", () => {
     expect(() => getOption(testData, 'step999')).toThrow('Aucune option trouvée avec le slug step999')
 });
+
+
+// * GETTOTALPRICE //
+
+test("retourne un message d'erreur si aucun argument n'est fourni", () => {
+    expect(() => getTotalPrice()).toThrow('Merci de fournir des données');
+});
+
+test("retourne 750 avec l'argument testData", () => {
+    expect(getTotalPrice(testData)).toBe(750);
+});
+
 
 
 
