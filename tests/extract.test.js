@@ -35,7 +35,6 @@ const extractPrice = (options) => {
 
         if (option.options) price += extractPrice(option.options);
     }
-    console.log(price)
     return price;
 }
 
