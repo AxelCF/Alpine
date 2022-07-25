@@ -6,7 +6,8 @@ export const PERSOEXT_ETRIERS_FREIN_BLEU_ALPINE  =  {
     slug: ' Etriers-de-frein-couleur-Bleu-Alpine',
     price: 384,
     default: false,
-    selected: false
+    selected: false,
+    group: 'etriers'
 }
 
 export const PERSOEXT_LOGO_ALPINE_AILES  =  {
@@ -24,5 +25,6 @@ export const PERSOEXT_ETRIERS_FREIN_GRIS  =  {
     slug: 'Etriers-de-frein-couleur-Gris-Anthracite',
     price: 0,
     default: true,
-    selected: true
+    selected: true,
+    group: 'etriers'
 }

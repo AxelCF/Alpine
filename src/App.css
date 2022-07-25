@@ -30,25 +30,63 @@ body{
 }
 
 .sectionOption{
-  background-color: rgb(11, 201, 125);
   padding: 10px;
-  margin: 10px;
+  margin: 20px 10px;
+  display: flex;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.selectOption{
-  background-color: rgb(78, 11, 201);
-  border:2px solid rgb(255, 1, 1);
-  padding: 10px;
-  margin: 10px;
+.sectionOption h3 {
+  padding: 0 10px;
+  background-color: #17191c;
+}
+.selectOption .selectModal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
 }
 .singleOption{
-  background-color: rgb(255, 15, 155);
-  padding: 10px;
+  border: 1px solid #17191c;
+  width: 150px;
+  height: 90px;
+  padding: 4px;
   margin: 10px;
+  position: relative;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+.singleOption.selected {
+  border: 1px solid #eee;
+}
+.singleOption .label{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  text-align: left;
+}
+
+.singleOption .price {
+  position: absolute;
+  background-color: #000b;
+  padding: 3px 6px;
+  top: 4px;
+  right: 4px;
 }
 .stepOptions{
-  background-color: rgb(252, 173, 16);
   padding: 10px;
   margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .alpine{
  width: 100%;

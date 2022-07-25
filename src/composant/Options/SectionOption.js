@@ -6,6 +6,7 @@ import SingleOption from "./SingleOption"
 const SectionOption = ({option}) =>{
     return (
        <div className="sectionOption">
+           <h3>{option.label}</h3>
         {option.options.map(option => {
                 switch (option.type) {
                     case SINGLE_OPTION:

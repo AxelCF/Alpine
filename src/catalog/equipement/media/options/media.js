@@ -16,7 +16,8 @@ export const MEDIA_AUDIO_STANDARD = {
     slug: 'audio-standard',
     price: 0,
     default: true,
-    selected: true
+    selected: true,
+    group: 'audio'
 }
 
 export const MEDIA_AUDIO_FOCAL = {
@@ -25,7 +26,8 @@ export const MEDIA_AUDIO_FOCAL = {
     slug: 'audio-focal',
     price: 600,
     default: false,
-    selected: false
+    selected: false,
+    group: 'audio'
 }
 
 export const MEDIA_AUDIO_FOCAL_PREMIUM = {
@@ -34,7 +36,8 @@ export const MEDIA_AUDIO_FOCAL_PREMIUM = {
     slug: 'audio-focal-premium',
     price: 1200,
     default: false,
-    selected: false
+    selected: false,
+    group: 'audio'
 }
 
 

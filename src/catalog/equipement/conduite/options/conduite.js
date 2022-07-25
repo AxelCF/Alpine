@@ -6,7 +6,8 @@ export const CONDUITE_AIDE_STATIONNEMENT_AR  =  {
     slug: 'Aide-au-stationnement-AR',
     price: 420,
     default: true,
-    selected: true
+    selected: true,
+    group: 'stationnement'
     // Si une option n'est disponible que pour un seul des deux modèles, le spécifier au format 'model: PURE' par exemple
 }
 
@@ -16,7 +17,8 @@ export const CONDUITE_AIDE_STATIONNEMENT_AV_AR  =  {
     slug: 'Aide-au-stationnement-AV-AR',
     price: 750,
     default: false,
-    selected: false
+    selected: false,
+    group: 'stationnement'
 }
 
 export const CONDUITE_AIDE_STATIONNEMENT_AV_AR_CAMERA  =  {
@@ -25,7 +27,8 @@ export const CONDUITE_AIDE_STATIONNEMENT_AV_AR_CAMERA  =  {
     slug: 'Aide-au-stationnement-AV-AR-CAM',
     price: 1200,
     default: false,
-    selected: false
+    selected: false,
+    group: 'stationnement'
 }
 
 export const CONDUITE_ECHAPEMENT_SPORT_ACTIF  =  {
