@@ -9,6 +9,7 @@ export const MEDIA_OPTIONS = {
         MEDIA_TELEMETRICS,
         {
             type: SELECT_OPTION,
+            label: 'Système Audio',
             options: [
                     MEDIA_AUDIO_STANDARD,
                     MEDIA_AUDIO_FOCAL,

@@ -3,7 +3,7 @@ import { SINGLE_OPTION } from "../../../../utils/constants";
 export const CONDUITE_AIDE_STATIONNEMENT_AR  =  {
     type: SINGLE_OPTION,
     label: 'Aide au stationnement AR',
-    slug: 'Aide-au-stationnement-AR',
+    slug: 'aide-stationnement-ar',
     price: 420,
     default: true,
     selected: true,
@@ -14,7 +14,7 @@ export const CONDUITE_AIDE_STATIONNEMENT_AR  =  {
 export const CONDUITE_AIDE_STATIONNEMENT_AV_AR  =  {
     type: SINGLE_OPTION,
     label: 'Aide au stationnement AV AR',
-    slug: 'Aide-au-stationnement-AV-AR',
+    slug: 'aide-stationnement-av-ar',
     price: 750,
     default: false,
     selected: false,
@@ -24,7 +24,7 @@ export const CONDUITE_AIDE_STATIONNEMENT_AV_AR  =  {
 export const CONDUITE_AIDE_STATIONNEMENT_AV_AR_CAMERA  =  {
     type: SINGLE_OPTION,
     label: 'Aide au stationnement AV AR CAM',
-    slug: 'Aide-au-stationnement-AV-AR-CAM',
+    slug: 'camera-recul',
     price: 1200,
     default: false,
     selected: false,
@@ -34,7 +34,7 @@ export const CONDUITE_AIDE_STATIONNEMENT_AV_AR_CAMERA  =  {
 export const CONDUITE_ECHAPEMENT_SPORT_ACTIF  =  {
     type: SINGLE_OPTION,
     label: 'Echappement Sport actif',
-    slug: 'Echappement-Sport-actif',
+    slug: 'echappement-sport',
     price: 1500,
     default: false,
     selected: false

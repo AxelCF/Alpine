@@ -30,8 +30,6 @@ export const configuratorSlice = createSlice({
             // PAYLOAD: optionSlug
             const option = getOption(state, action.payload);
 
-            console.log(current(option))
-
             if (!option.selected) {
                 if (option.group) {
                     disableGroup(state, option.group);
@@ -99,7 +97,7 @@ const extractPrice = (options) => {
     let price = 0;
 
     for (const option of options) {
-        price += option.price ?? 0;
+        if (option.selected) price += option.price ?? 0;
 
         if (option.options) price += extractPrice(option.options);
     }

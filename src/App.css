@@ -48,30 +48,44 @@ body{
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #000b;
+  background-color: #000d;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 1;
 }
+.selectOption .selectModal .selectOptions {
+  display: flex;
+  margin-top: 20px;
+}
 .singleOption{
   border: 1px solid #17191c;
-  width: 150px;
-  height: 90px;
+  width: 160px;
+  height: 80px;
   padding: 4px;
   margin: 10px;
   position: relative;
   font-size: 0.8em;
   cursor: pointer;
+  background-color: #17191c;
+}
+.singleOption img {
+  opacity: .5;
 }
 .singleOption.selected {
   border: 1px solid #eee;
 }
+.singleOption.selected img {
+  opacity: 1;
+}
 .singleOption .label{
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  padding: 8px;
+  background-color: #0008;
   text-align: left;
 }
 

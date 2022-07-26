@@ -14,9 +14,11 @@ const SelectOption = ({option}) =>{
             {modal ?
             <div className="selectModal" onClick={() => setModal(false)}>
                 <h2>{option.label}</h2>
+                <div className="selectOptions">
                 {option.options.map(option => {
                     return <SingleOption option={option} />
                 })}
+                </div>
             </div>
             : <div></div>
             }
