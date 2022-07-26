@@ -31,7 +31,7 @@ const extractPrice = (options) => {
     let price = 0;
 
     for (const option of options) {
-        price += option.price ?? 0;
+        if (option.selected) price += option.price ?? 0;
 
         if (option.options) price += extractPrice(option.options);
     }
@@ -77,8 +77,8 @@ test("retourne un message d'erreur si aucun argument n'est fourni", () => {
     expect(() => getTotalPrice()).toThrow('Merci de fournir des données');
 });
 
-test("retourne 750 avec l'argument testData", () => {
-    expect(getTotalPrice(testData)).toBe(750);
+test("retourne 300 avec l'argument testData", () => {
+    expect(getTotalPrice(testData)).toBe(300);
 });
 
 
@@ -143,7 +143,6 @@ const testData = {
                             type: 2,
                             label: 'Step222',
                             slug: 'step222',
-                            price: 200,
                             selected: false,
                             default: true,
                             options: [

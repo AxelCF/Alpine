@@ -3,7 +3,7 @@ import { SINGLE_OPTION } from "../../../../utils/constants";
 export const MEDIA_TELEMETRICS =  {
     type: SINGLE_OPTION,
     label: 'Alpine Telemetrics',
-    slug: 'telemetry',
+    slug: 'alpine-metrics',
     price: 204,
     default: false,
     selected: false
@@ -16,7 +16,8 @@ export const MEDIA_AUDIO_STANDARD = {
     slug: 'audio-standard',
     price: 0,
     default: true,
-    selected: true
+    selected: true,
+    group: 'audio'
 }
 
 export const MEDIA_AUDIO_FOCAL = {
@@ -25,16 +26,18 @@ export const MEDIA_AUDIO_FOCAL = {
     slug: 'audio-focal',
     price: 600,
     default: false,
-    selected: false
+    selected: false,
+    group: 'audio'
 }
 
 export const MEDIA_AUDIO_FOCAL_PREMIUM = {
     type: SINGLE_OPTION,
     label: 'Système Audio Focal Premium',
-    slug: 'audio-focal-premium',
+    slug: 'audio-premium',
     price: 1200,
     default: false,
-    selected: false
+    selected: false,
+    group: 'audio'
 }
 
 

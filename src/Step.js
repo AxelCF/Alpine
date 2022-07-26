@@ -7,7 +7,8 @@ import { useSelector } from 'react-redux';
 
 
 function Step() {
-  const model = useSelector(state => state.configurator.steps[1]);
+  const model = useSelector(state => state.configurator.steps[0]);
+  const totalPrice = useSelector(state => state.configurator.price);
 
   return (
     <div className="Step">
@@ -15,6 +16,7 @@ function Step() {
         <img className="topLogo" src={Logo}  alt="logo"></img>
         <h2>LEGENDE</h2>
         <StepOptions step={model}/>
+        Prix total : {totalPrice} €
       </header>
     </div>
 
